@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "809036133077",
+    "project_id": "yalla-tbib",
+    "storage_bucket": "yalla-tbib.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809036133077:android:f391300daed1a3de40285c",
+        "android_client_info": {
+          "package_name": "com.yallatbib.medical.transport"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBR0epfPRHEBFk2v1S5lfTLc2zu78XYSYQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
