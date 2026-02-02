@@ -1,0 +1,103 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# VS Code
+.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+
+# Windows related
+**/windows/flutter/ephemeral/
+**/windows/flutter/generated_plugin_registrant.h
+**/windows/flutter/generated_plugins.cmake
+**/windows/flutter/generated_plugins.cpp
+**/windows/flutter/generated_plugins.h
+**/windows/CMakeUsers.txt
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# === YALLA TBIB SPECIFIC ===
+
+# Environment variables
+.env
+.env.local
+.env.production
+
+# Firebase credentials (SENSITIVE!)
+firebase-service-account.json
+**/firebase-service-account*.json
+
+# APK files (gardés dans releases/ si nécessaire)
+*.apk
+
+# Documentation temporaire (garder seulement les essentiels)
+*_DEMO.md
+*_TEST*.md
+*_GUIDE.md
+RAPPORT_*.md
+DEMO_*.md
+GUIDE_*.md
+YALLA_TBIB_*.md
+TEST_*.md
+RESULTATS_*.md
+SUCCES_*.md
+INSTRUCTIONS_*.md
+PROBLEME_*.md
+PLANNING_*.md
+FLUX_*.md
+ETAPE_*.md
+SYSTEME_*.md
+SOLUTION_*.md
+
+# Fichiers de sauvegarde
+*.bak
+# Autoriser tous les fichiers main*.dart
+# lib/main_*.dart
+
+# Fichiers temporaires et tests
+# lib/src/* est maintenant autorisé (tous les fichiers .dart inclus)
+integration_test/
+test/*_test.dart
+
+# Scripts de construction
+build_*.ps1
+lancer_*.ps1
+test_*.ps1
+test_*.sh
+
+# Répertoires temporaires
+releases/
