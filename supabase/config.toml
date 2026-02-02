@@ -1,0 +1,17 @@
+
+[functions.create-checkout]
+enabled = true
+verify_jwt = true
+import_map = "./functions/create-checkout/deno.json"
+entrypoint = "./functions/create-checkout/index.ts"
+
+[functions.health-check]
+enabled = true
+verify_jwt = false
+entrypoint = "./functions/health-check/index.ts"
+
+[functions.notify-drivers]
+enabled = true
+verify_jwt = false
+import_map = "./functions/notify-drivers/deno.json"
+entrypoint = "./functions/notify-drivers/index.ts"

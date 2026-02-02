@@ -1,0 +1,12 @@
+{
+  "imports": {
+    "std/": "https://deno.land/std@0.204.0/",
+    "http/": "https://deno.land/std@0.204.0/http/",
+    "@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js@2.38.0",
+    "stripe": "https://esm.sh/stripe@11.1.0?target=deno&no-check&pin=v128"
+  },
+  "compilerOptions": {
+    "strict": true,
+    "noImplicitAny": false
+  }
+}
