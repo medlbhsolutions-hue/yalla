@@ -128,7 +128,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                       ),
                     ),
                     
-                    const Spacer(flex: 3), // Pousse le contenu vers le haut pour éviter le bouton
+                    const SizedBox(height: 100), // Espace réservé pour le bouton (plus sûr que Spacer)
                   ],
                 ),
               );

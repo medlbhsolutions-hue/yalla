@@ -64,20 +64,28 @@ class AppConfig {
   static String get firebaseAppId => dotenv.env['FIREBASE_APP_ID'] ?? '';
 
   static String get supabaseUrl {
-    final url = dotenv.env['SUPABASE_URL'];
-    if (url != null && url.isNotEmpty) return url;
-    // FALLBACK POUR DEMO (Sauvetage)
-    return '';
+    // 1. Essayer la variable injectée au build (Production Web)
+    const envUrl = String.fromEnvironment('SUPABASE_URL');
+    if (envUrl.isNotEmpty) return envUrl;
+    
+    // 2. Essayer le fichier .env (Développement local)
+    return dotenv.env['SUPABASE_URL'] ?? '';
   }
 
   static String get supabaseAnonKey {
-    final key = dotenv.env['SUPABASE_ANON_KEY'];
-    if (key != null && key.isNotEmpty) return key;
-    // FALLBACK POUR DEMO (Sauvetage)
-    return '';
+    // 1. Essayer la variable injectée au build (Production Web)
+    const envKey = String.fromEnvironment('SUPABASE_ANON_KEY');
+    if (envKey.isNotEmpty) return envKey;
+
+    // 2. Essayer le fichier .env (Développement local)
+    return dotenv.env['SUPABASE_ANON_KEY'] ?? '';
   }
   
-  static String get googleMapsApiKey => dotenv.env['GOOGLE_MAPS_API_KEY'] ?? '';
+  static String get googleMapsApiKey {
+    const envKey = String.fromEnvironment('GOOGLE_MAPS_API_KEY');
+    if (envKey.isNotEmpty) return envKey;
+    return dotenv.env['GOOGLE_MAPS_API_KEY'] ?? '';
+  }
 
   // ============================================
   // TWILIO CONFIGURATION (Optionnel)
