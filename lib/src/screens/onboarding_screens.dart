@@ -66,7 +66,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 padding: const EdgeInsets.symmetric(horizontal: 40),
                 child: Column(
                   children: [
-                    const Spacer(flex: 2), // Plus d'espace en haut pour remonter le tout
+                    const SizedBox(height: 60), // Espace fixe au lieu de Spacer : remonte tout en haut
                     
                     // 🎯 LOGO GÉANT (AGRANDI)
                     if (_pages[index].isLogo)
@@ -100,7 +100,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                         child: Icon(_pages[index].icon, size: 120, color: const Color(0xFF4AC2B2)),
                       ),
                     
-                    const SizedBox(height: 60),
+                    const SizedBox(height: 30), // Réduit de 60 à 30
                     
                     // Titre
                     Text(
@@ -114,7 +114,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                       ),
                     ),
                     
-                    const SizedBox(height: 25),
+                    const SizedBox(height: 15), // Réduit de 25 à 15
                     
                     // Description
                     Text(
